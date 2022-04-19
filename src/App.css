@@ -1,0 +1,224 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  /* color: white; */
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slider {
+  /* background: white; */
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  /* width: 1140px; */
+}
+
+.slider::before, .slider::after {
+  /* background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%); */
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(200px * 18);
+
+}
+
+/* .slider .slide-track:hover {
+  animation-play-state: paused;
+} */
+
+.slider .slide {
+  height: 200px;
+  width: 200px;
+}
+
+.react-multi-carousel-list{
+  height:500px!important;
+  align-items: flex-start!important;
+}
+/* 
+.slide:nth-child(1), .slide:nth-child(10) {
+  background-color: yellow;
+}
+
+.slide:nth-child(2), .slide:nth-child(11) {
+  background-color: coral;
+}
+
+.slide:nth-child(3), .slide:nth-child(12) {
+  background-color: blue;
+}
+
+.slide:nth-child(4), .slide:nth-child(13) {
+  background-color: red;
+}
+
+.slide:nth-child(5), .slide:nth-child(14) {
+  background-color: orange;
+}
+
+.slide:nth-child(6), .slide:nth-child(15) {
+  background-color: purple;
+}
+
+.slide:nth-child(7), .slide:nth-child(16) {
+  background-color: pink;
+}
+
+.slide:nth-child(8), .slide:nth-child(17) {
+  background-color: navy;
+}
+
+.slide:nth-child(9), .slide:nth-child(18) {
+  background-color: lime;
+} */
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-200px * 9));
+  }
+}
+
+
+.profile-card-4 {
+  max-width: 300px;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border: 4px solid white;
+}
+
+.profile-card-4 img {
+  transition: all 0.25s linear;
+}
+
+.profile-card-4 .profile-content {
+  position: relative;
+  padding: 15px;
+  background-color: #ffc107;
+}
+
+.profile-card-4 .profile-name {
+  font-weight: bold;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: -70px;
+  color: #FFF;
+  font-size: 17px;
+}
+
+.profile-card-4 .profile-name p {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.profile-card-4 .profile-description {
+  color: Black;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.profile-card-4 .profile-overview {
+  padding: 15px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #777;
+}
+
+.profile-card-4 .profile-overview h4 {
+  color: #273751;
+  font-weight: bold;
+}
+
+.profile-card-4 .profile-content::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  top: -10px;
+  left: 0px;
+  right: 0px;
+  background-color: #ffc107;
+  z-index: 0;
+  transform: skewY(3deg);
+}
+
+.profile-card-4:hover img {
+  transform: rotate(5deg) scale(1.1, 1.1);
+  filter: brightness(110%);
+}
+
+.selected {
+  border: 4px solid green;
+}
+.styles_faq-row__2YF3c {
+  border: 0px!important;
+}
+.styles_row-content-text__2sgAB {
+  padding: 0px!important;
+  line-height: 2rem;
+}
